@@ -1,0 +1,56 @@
+
+body{
+    background-image: url("./Images/nature-3134705_1920.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+#city{
+    height: 30px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    outline: none;
+}
+#city~button{
+    background-color:green;
+    border: none;
+    padding: 11px 20px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-left: -4px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+#info{
+    margin-top: 40px;
+    justify-content: space-evenly;
+    align-items:center;
+}
+#info #LHS{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+   
+    @media screen and (min-width:1000px){
+        #info{
+            display: flex;
+            margin: auto;
+        }
+        #gmap_canvas{
+            width: 600px;
+            height: 500px;
+        }
+    }
+ @media screen and (max-width:999px) and (min-width:700px){
+    #gmap_canvas{
+        width: 500px;
+        height: 400px;
+    }
+}
+@media screen and (max-width:699px){
+    #gmap_canvas{
+        width: 400px;
+        height: 350px;
+    }
+}
